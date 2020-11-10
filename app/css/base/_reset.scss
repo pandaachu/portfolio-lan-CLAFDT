@@ -1,0 +1,76 @@
+/* CSS Document*/
+
+// lancome reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: normal;
+}
+
+/* CSS reset*/
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+textarea,
+p,
+blockquote,
+th,
+td,
+footer,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* link styles*/
+a,
+div,
+li {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a,
+div,
+li:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  // -webkit-transition: all 0.5s 
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top; //解除圖片底下有空白問題
+}
+
+ul,
+li {
+  list-style: none;
+}
