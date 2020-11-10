@@ -421,59 +421,6 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="lib/jquery.isonscreen.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-
-    <script>
-      $(function() {
-        // 載入頁面 加入gtm
-        dataLayer.push({
-          event: "campaign_pageview"
-        });
-        var pushAlready = false;
-        $("#otoo-event-submit-button").click(function() {
-          $(".response_box").on("DOMSubtreeModified", "span", function() {
-            if ($(".response_box span").text().length != 0) {
-              $(".response_box").addClass("active");
-              $("body").css("overflow-y", "hidden");
-              $(".response_box span").removeClass("hidden");
-              $(".response_box").off("DOMSubtreeModified", "span");
-              if ($(".response_box .error_close").length == 0) {
-                $(".response_box").append(
-                  '<a class="close_lightbox error_close" href="javascript:;" >X</a>'
-                );
-              }
-
-              // if (($('.response_box span').hasClass('error_message') != true) && (!pushAlready)) { //上線
-              if ($(".response_box span").hasClass("error_message") != true) {
-                //上線
-                console.log("報名成功");
-                // 如果報名成功，切換文字，firefox無法更換文字
-                $(".response_box span").text("資料已成功送出謝謝您的參與!");
-                //   $(".response_box span").append(
-                // '<div class="CLA-thanks-wrap"><img src="event-o2o-page/202003_CLA_Launch/images/thankyou-page.jpg?$staticlink$" ><a href="https://www.lancome.com.tw" target="_blank"></a><a href="$url('Search-ShowContent', 'fdid','online_valueset')$" target="_blank"></a></div>');
-                // $(".response_box span").append(
-                //   '<div class="CLA-thanks-wrap"><img src="event-o2o-page/202003_CLA_Launch/images/thankyou-page.jpg?$staticlink$" ><a href="$url('Product-Show','pid','A01819-LAC')$" target="_blank"></a><a href="https://www.lancome.com.tw/2020-cny?lid=carousel1" target="_blank"></a></div>'
-                // );
-
-                //if($('.response_box span').hasClass('error_message')) {  //測試用
-                //alert('campaign_leads_completed');
-                dataLayer.push({
-                  event: "campaign_leads_completed"
-                });
-                // pushAlready = true;
-              }
-            }
-          });
-        });
-
-        $(".response_box").on("click", ".close_lightbox", function() {
-          $("body").css("overflow-y", "auto");
-          $(".response_box").removeClass("active");
-          $(".close_lightbox").remove();
-          // $('.f_textinput').val(''); // 清除欄位值
-          $(".response_box span").addClass("hidden");
-        });
-      });
-    </script>
+    <script type="text/javascript" src="js/all.js"></script>
   </body>
 </html>
