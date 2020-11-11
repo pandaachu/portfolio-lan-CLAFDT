@@ -348,21 +348,30 @@
                     <form class="mt-4" style="text-align: left;">
                       <div class="form-group">
                         <label for="name">姓名</label>
-                        <input type="text" class="form-control" id="name">
+                        <input type="text" class="form-control mt-2" id="name">
                       </div>
                       <div class="form-group">
                         <label for="tel">電話</label>
-                        <input type="tel" class="form-control" id="tel">
+                        <input type="tel" class="form-control mt-2" id="tel">
                       </div>
                       <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control mt-2" id="email" aria-describedby="emailHelp">
                       </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">提醒您送出資料後，即代表您同意將此資料提供予Lancôme 蘭蔻進行行銷處理與使用<a href="http://www.lancome.com.tw/customer-service-security-policy.html" target="_blank">[詳細個人資料權益說明]</a></label>
+                      <div class="form-group form-check custom-control custom-checkbox">
+                        <input type="checkbox" class="form-check-input custom-control-input" id="check">
+                        <label class="form-check-label custom-control-label" for="check">
+                          提醒您送出資料後，即代表您同意將此資料提供予Lancôme 蘭蔻進行行銷處理與使用
+                          <a
+                            class="text-muted"
+                            href="http://www.lancome.com.tw/customer-service-security-policy.html"
+                            target="_blank"
+                          >
+                            [詳細個人資料權益說明]
+                          </a>
+                        </label>
                       </div>
-                      <button type="submit" class="btn btn-lg btn-block btn-dark">送出</button>
+                      <button type="submit" class="btn btn-lg btn-block btn-primary">送出</button>
                     </form>
                     <div class="note-wrap note">
                       <ul>
@@ -415,8 +424,8 @@
           </div>
         </div>
       </div>
+      <footer class="py-4 text-muted">僅供面試作品用</footer>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="lib/jquery.isonscreen.min.js"></script>
     <script type="text/javascript" src="js/all.js"></script>

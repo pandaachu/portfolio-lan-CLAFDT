@@ -66,7 +66,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $black !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -528,12 +528,12 @@ $custom-control-gutter:                 .5rem !default;
 $custom-control-spacer-x:               1rem !default;
 $custom-control-cursor:                 null !default;
 
-$custom-control-indicator-size:         1rem !default;
-$custom-control-indicator-bg:           $input-bg !default;
+$custom-control-indicator-size:         1.1rem !default;
+$custom-control-indicator-bg:           transparent !default;
 
 $custom-control-indicator-bg-size:      50% 50% !default;
 $custom-control-indicator-box-shadow:   $input-box-shadow !default;
-$custom-control-indicator-border-color: $gray-500 !default;
+$custom-control-indicator-border-color: $dark !default;
 $custom-control-indicator-border-width: $input-border-width !default;
 
 $custom-control-label-color:            null !default;
